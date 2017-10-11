@@ -1,8 +1,8 @@
-public Car{
+public class Car{
 	private String vin;
 	private String make;
 	private String model;
-	private year int;
+	private int year;
 	
 	public Car(){
 		vin = "none";
@@ -22,5 +22,9 @@ public Car{
 			return true;
 		else
 			return false;
+	}
+	
+	public String toString(){
+		return ("VIN #: "+vin+"\n"+year+" "+make+" "+model);
 	}
 }
